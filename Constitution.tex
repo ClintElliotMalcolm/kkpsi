@@ -8,8 +8,9 @@
 \newlist{abc}{enumerate}{10}
 \setlist[abc]{label=\alph*)}
 \newlist{legal}{enumerate}{10}
-\setlist[legal,1]{label=\arabic{section}.\arabic*.}
-\setlist[legal]{label*=\arabic*.}
+\setlist[legal,1]{label=\arabic{section}.\arabic*}
+\setlist[legal]{label*=.\arabic*}
+\renewcommand \thesection{\Roman{section}}
 
 \begin{document}
 \title{The Constitution of Kappa Kappa Psi}
@@ -70,6 +71,7 @@ Be it known that Kappa Kappa Psi, National Honorary Fraternity for College band 
   \item
     It shall be the duty of each Active and Associate Member to adhere to the Chapter Attendance Policy and Code of Conduct; to promptly fulfill all financial obligations to both the Chapter and the National Fraternity; to become acquainted with the National Constitution, District Constitution, Joint District Constitution, Chapter Constitution and the history of Kappa Kappa Psi; to support the efforts and purposes of the Chapter and Fraternity.
 \end{legal}
+
 \section{Officers and Appointed Positions}
 \begin{legal}
   \item
@@ -217,13 +219,14 @@ Be it known that Kappa Kappa Psi, National Honorary Fraternity for College band 
           \item 
             The creation of a new non-standing committee shall require a favorable majority vote of the Chapter’s total Active Membership.
           \item 
-            The new Committee Head will be assigned following the provisions outlined in section 5.02.
+            The new Committee Head will be assigned following the provisions outlined in section \ref{committeehead}.
         \end{legal}
     \end{legal}
   \item
+    \label{committeehead}
     All Committee Heads shall be nominated by the Executive Council and shall be presented to the Chapter for approval.
   \item
-    New Committee Heads will be selected for all committees, except temporary committees, each spring quarter after the election of the new Executive Council following the same provisions outlined in 5.02.
+    New Committee Heads will be selected for all committees, except temporary committees, each spring quarter after the election of the new Executive Council following the same provisions outlined in \ref{committeehead}.
   \item
     All Committees are responsible to meet as deemed necessary by a simple majority of the committee and announce the time and location of meetings at a regularly scheduled meeting of the Chapter.
   \item
@@ -235,7 +238,7 @@ Be it known that Kappa Kappa Psi, National Honorary Fraternity for College band 
     The individual will be given a hearing in front of the Active Membership before the said motion is voted on.
     The vote will be by secret ballot.
   \item
-    In the case of the vacancy of a Committee Head position between regularly scheduled elections, a new Committee Head will be put in place following the same provisions outlined in section 5.02.
+    In the case of the vacancy of a Committee Head position between regularly scheduled elections, a new Committee Head will be put in place following the same provisions outlined in section \ref{committeehead}.
   \item
     Upon due cause a non-standing Committee may be disbanded following a favorable vote of a majority of the Chapter’s total Active Membership.
     A discussion on the necessity and purpose of said committee will take place before the motion is voted on.
